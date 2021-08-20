@@ -14,15 +14,22 @@ const Home = () => {
     dispatch(decrement());
   };
 
+  const handleOddInc = () => {
+    //write code here
+  };
+
   return (
     <React.Fragment>
       <h2>
         {'\u2728'}
-        {'\u2728'} React Redux Counter Example{'\u2728'}
+        {'\u2728'} React Redux Counter Example {'\u2728'}
         {'\u2728'}
         <button onClick={handleInc}>INCREMENT</button>
         <button onClick={handleDec}>DECREMENT</button>
-        {JSON.stringify(state)}
+        <br />
+        <button onClick={handleOddInc}>IF ODD</button>
+        <br />
+        <span> State {JSON.stringify(state)} </span>
       </h2>
     </React.Fragment>
   );
